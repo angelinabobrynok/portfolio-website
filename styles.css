@@ -1,0 +1,133 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    border: 1px solid black;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header * {
+    font-size: inherit; 
+    color:black;
+    text-decoration: none;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10%;
+}
+.projects-main{
+    width: 20%;
+    border: 1px solid black;
+}
+.project-title{
+    display: flex;
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.projects-main h2{
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.work-exp,.education{
+    width: 40%;
+    border: 1px solid black;
+    padding: 20px;
+}
+.education ul{
+    list-style-type: none;
+    padding: 0%;
+}
+ul li::before {
+    content: "- ";
+    color: black;
+}
+.articles{
+    width: 100%;
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.articles-h2{
+    margin: 20px;
+    padding-top: 20px;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    min-width: 270px; 
+    scroll-snap-align: start;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.projects, .contacts{
+    border: 1px solid black;
+    padding: 20px;
+}
+.project {
+    border: 1px solid black;
+    padding: 20px;
+}
+.form-section{
+    border: 1px solid black;
+    padding: 20px;
+}
+.form * {
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .projects,
+    .work-exp,
+    .education{
+        width: 100%;
+    }
+    header, .header-title{
+        flex-direction: column;
+    }
+
+    .articles{
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .card{
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+}
