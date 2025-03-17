@@ -112,7 +112,7 @@ footer{
 
 @media (max-width: 768px) {
 
-    .projects,
+    .projects-main,
     .work-exp,
     .education{
         width: 100%;
